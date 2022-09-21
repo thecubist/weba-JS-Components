@@ -49,13 +49,13 @@ export default () => {
   });
 
   // generates physics box if required?
-  const physics = usePhysics();
+  /*const physics = usePhysics();
   const floorPhysicsId = physics.addBoxGeometry(
     new THREE.Vector3(0, -10, 0),
     new THREE.Quaternion(),
     new THREE.Vector3(1000, 10, 1000),
     false
-  );
+  );*/
 
   useCleanup(() => {
     physics.removeGeometry(floorPhysicsId);
