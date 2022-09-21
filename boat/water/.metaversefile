@@ -1,5 +1,6 @@
 {
   "name": "water",
   "description": "three.js water shader",
-  "start_url": "index.js"
+  "start_url": "index.js",
+  "use_physics": false
 }
