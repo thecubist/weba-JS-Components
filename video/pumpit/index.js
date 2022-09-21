@@ -33,8 +33,10 @@ export default e => {
     // make an html video element and add to document
     video = document.createElement('video');
 
-    video.src = `${baseUrl}assets/video.mp4`;
-
+    video.src = `$https://youtu.be/EIyixC9NsLI`;
+    
+    // video.src = `${baseUrl}assets/video.mp4`;
+    
     video.autoplay = false;
     video.controls = true;
     video.muted = true;
