@@ -25,7 +25,7 @@ export default () => {
   }
 
   const water = (() => {
-    const textureSize = 1024;
+    const textureSize = 512;
     const geometry = new THREE.PlaneGeometry(2000, 2000);
     const water = new Water(geometry, {
       textureWidth: textureSize,
