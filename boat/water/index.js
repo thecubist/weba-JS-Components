@@ -32,9 +32,9 @@ export default () => {
       textureHeight: textureSize,
       waterNormals: waterNormals,
       sunDirection: new THREE.Vector3(0, 200, -900),
-      sunColor: 0x000000, // water surface lighting using hex code (default 0x000000)
+      sunColor: 0xffffff, // water surface lighting using hex code (default 0x000000)
       waterColor: 0x00c3ff, // water colour using hex code (default 0x000000)
-      distortionScale: 0.9,
+      distortionScale: 0,
       fog: true,
     });
     return water;
