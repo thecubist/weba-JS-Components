@@ -33,7 +33,7 @@ export default () => {
       waterNormals: waterNormals,
       sunDirection: new THREE.Vector3(0, 200, -900),
       sunColor: 0x000000,
-			waterColor: 0x000000,
+      waterColor: 0x78dfff,
       distortionScale: 0.75,
       fog: true,
     });
