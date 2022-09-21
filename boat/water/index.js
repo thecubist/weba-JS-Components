@@ -55,7 +55,7 @@ export default () => {
     new THREE.Quaternion(),
     new THREE.Vector3(1000, 10, 1000),
     false
-  );*/
+  ); */
 
   useCleanup(() => {
     physics.removeGeometry(floorPhysicsId);
