@@ -32,8 +32,8 @@ export default () => {
       textureHeight: textureSize,
       waterNormals: waterNormals,
       sunDirection: new THREE.Vector3(0, 200, -900),
-      sunColor: 0x000000,
-      waterColor: 0x78dfff,
+      sunColor: 0x78dfff, // water surface lighting using hex code (default 0x000000)
+      waterColor: 0x78dfff, // water colour using hex code (default 0x000000)
       distortionScale: 0.75,
       fog: true,
     });
@@ -48,6 +48,7 @@ export default () => {
     water.material.uniforms.time.value += timeDiff * 0.0001;
   });
 
+  // generates physics box if required?
   const physics = usePhysics();
   const floorPhysicsId = physics.addBoxGeometry(
     new THREE.Vector3(0, -10, 0),
@@ -57,7 +58,6 @@ export default () => {
   );
 
   useCleanup(() => {
-    // console.log('clean up street');
     physics.removeGeometry(floorPhysicsId);
   });
 
